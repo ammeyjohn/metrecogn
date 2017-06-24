@@ -2,7 +2,7 @@ from sys import argv
 from os import path, listdir, rename, remove
 import utils
 
-letters = list('ABCDEFGHIJKLMNOPQQRSTUVWXYZ')
+letters = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
 
 
 def get_filename(folder, prefix, ori_name):

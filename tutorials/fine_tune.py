@@ -9,8 +9,8 @@ logging.basicConfig(level=logging.DEBUG, format=head)
 
 def get_iterators(batch_size, data_shape=(3, 224, 224)):
     train = mx.io.ImageRecordIter(
-        # path_imgrec='./output/classify/meter_train.rec',
-        path_imgrec='./output/rotate/rotate_train.rec',
+        path_imgrec='./output/classify/meter_train.rec',
+        # path_imgrec='./output/rotate/rotate_train.rec',
         data_name='data',
         label_name='softmax_label',
         batch_size=batch_size,
@@ -19,8 +19,8 @@ def get_iterators(batch_size, data_shape=(3, 224, 224)):
         rand_crop=True,
         rand_mirror=True)
     val = mx.io.ImageRecordIter(
-        # path_imgrec='./output/classify/meter_val.rec',
-        path_imgrec='./output/rotate/rotate_val.rec',
+        path_imgrec='./output/classify/meter_val.rec',
+        # path_imgrec='./output/rotate/rotate_val.rec',
         data_name='data',
         label_name='softmax_label',
         batch_size=batch_size,
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
     num_epoch = int(argv[1])
 
-    num_classes = 4
+    num_classes = 8
     batch_per_gpu = 8
     num_gpus = 1
 
@@ -85,5 +85,5 @@ if __name__ == '__main__':
     print(mod_score)
     # assert mod_score > 0.77, "Low training accuracy."
 
-    # mod.save_checkpoint('./output/classify/meter', num_epoch)
-    mod.save_checkpoint('./output/rotate/rotate', num_epoch)
+    mod.save_checkpoint('./output/classify/meter', num_epoch)
+    # mod.save_checkpoint('./output/rotate/rotate', num_epoch)

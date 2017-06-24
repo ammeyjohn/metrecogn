@@ -1,6 +1,6 @@
 from sys import argv
 from os import path, listdir, mkdir
-from shutil import copyfile
+from shutil import copyfile, rmtree
 import cv2
 import numpy as np
 import mxnet as mx
@@ -19,6 +19,7 @@ rot_labels = ['0', '180', 'L90', 'R90']
 
 
 def get_module(prefix, num_epoch, img_shape=(224, 224)):
+    print(prefix)
     sym, arg_params, aux_params = mx.model.load_checkpoint(prefix, num_epoch)
     mod = mx.mod.Module(symbol=sym, context=mx.cpu(), label_names=None)
     mod.bind(for_training=False, data_shapes=[('data', (1, 3, img_shape[0], img_shape[1]))])
@@ -43,33 +44,32 @@ def classify(mod, img, labels):
     return prob[a[0]], labels[a[0]]
 
 
-# def classify_batch(prefix, labels):
-#     num_epoch = 5
-#
-#     for l in labels:
-#         dst = path.join(output, l)
-#         # if path.exists(dst):
-#         #     rmtree(dst)
-#         # mkdir(dst)
-#         if not path.exists(dst):
-#             mkdir(dst)
-#
-#     mod = get_module(prefix, num_epoch)
-#
-#     for file in listdir(folder):
-#
-#         img = cv2.imread(path.join(folder, file))
-#         if img is None: continue
-#
-#         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-#
-#         prob, label = classify(mod, img, labels)
-#         print('%s, prob=%f, label=%s' % (file, prob, label))
-#
-#         src = path.join(folder, file)
-#         dst = path.join(output, label, file)
-#
-#         copyfile(src, dst)
+def classify_batch(prefix, num_epoch, labels):
+
+    for l in labels:
+        dst = path.join(arg_output, l)
+        if path.exists(dst):
+            rmtree(dst)
+        mkdir(dst)
+        if not path.exists(dst):
+            mkdir(dst)
+
+    mod = get_module(prefix, num_epoch)
+
+    for file in listdir(arg_folder):
+
+        img = cv2.imread(path.join(arg_folder, file))
+        if img is None: continue
+
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        prob, label = classify(mod, img, labels)
+        print('%s, prob=%f, label=%s' % (file, prob, label))
+
+        src = path.join(arg_folder, file)
+        dst = path.join(arg_output, label, file)
+
+        copyfile(src, dst)
 
 
 def get_regions(img, scale, min_neighbors):
@@ -94,7 +94,6 @@ def get_regions(img, scale, min_neighbors):
 
 
 def normalize(img):
-
     # 区分是否为水表
     cls_prob, cls_label = classify(cls_mod, img, cls_labels)
     if cls_label == 'LX14' or cls_label == 'LX15' or cls_label == 'WS' or cls_label == 'small_meter' or cls_label == 'blurred':
@@ -113,7 +112,6 @@ def normalize(img):
         elif rot_label == 'R90':
             rot_img = rot.rotate270(img)
 
-
         # if DEBUG:
         #     plt.imshow(rot_img)
         #     plt.show()
@@ -128,7 +126,6 @@ def normalize(img):
         return rot_img, info
 
     return None, None
-
 
 
 def cut_batch():
@@ -241,9 +238,8 @@ def recognize(filepath):
     return numbers, info
 
 
-
-cls_mod = get_module('./output/classify/meter', 3)
-rot_mod = get_module('./output/rotate/rotate', 1)
+cls_mod = get_module('./output/classify/meter', 5)
+rot_mod = get_module('./output/rotate/rotate', 5)
 executor = get_executor()
 
 if __name__ == '__main__':
@@ -256,7 +252,8 @@ if __name__ == '__main__':
 
     arg_folder = argv[1]
     arg_output = argv[2]
-    cut_batch()
+    # cut_batch()
+    classify_batch('./output/classify/meter', 5, cls_labels)
 
     # numbers = recognize(path.join(arg_folder, arg_name))
     # print(numbers)
