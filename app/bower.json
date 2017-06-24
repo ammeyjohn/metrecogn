@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "homepage": "https://github.com/ammeyjohn/metrecogn",
+  "authors": [
+    "Patrick <ammeyjohn@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static",
+    "test",
+    "tests"
+  ]
+}

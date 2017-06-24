@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水表读数识别</title>
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="static/blueimp-file-upload/css/jquery.fileupload.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+              <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>请选择水表图片...</span>
+        <input id="fileupload" type="file" name="myfile">
+    </span>
+            <br>
+            <br>
+            <div id="progress" class="progress">
+                <div class="progress-bar progress-bar-success"></div>
+            </div>
+            <div id="files" class="table-responsive">
+                <img id="image" src="" />
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>名称</td>
+                            <td>水笔读数</td>
+                            <td>水表类型</td>
+                            <td>水表类型概率</td>
+                            <td>水表角度</td>
+                            <td>水表角度概率</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="name"></td>
+                            <td id="number"></td>
+                            <td id="cls_label"></td>
+                            <td id="cls_prob"></td>
+                            <td id="rot_label"></td>
+                            <td id="rot_prob"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/jquery/dist/jquery.min.js"></script>
+<script src="static/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="static/blueimp-file-upload/js/jquery.fileupload.js"></script>
+<script src="static/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    /*jslint unparam: true */
+    /*global window, $ */
+    $(function () {
+        'use strict';
+        $('#fileupload').fileupload({
+            url: '/api/upload',
+            dataType: 'json',
+            done: function (e, data) {
+                var file = data.result.files
+
+                $('#image').attr('src', file.url)
+                $('#name').text(file.name)
+                $('#number').text(file.number)
+                $('#cls_label').text(file.info.cls_label)
+                $('#cls_prob').text(file.info.cls_prob)
+                $('#rot_label').text(file.info.rot_label)
+                $('#rot_prob').text(file.info.rot_prob)
+            },
+            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput)
+            .parent().addClass($.support.fileInput ? undefined : 'disabled');
+    });
+</script>
+</body>
+</html>
