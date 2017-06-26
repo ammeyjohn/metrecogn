@@ -38,7 +38,6 @@ def api_upload():
     f = request.files['myfile']  # 从表单的file字段获取文件，myfile为该表单的name值
     if f and allowed_file(f.filename):  # 判断是否是允许上传的文件类型
         fname = secure_filename(f.filename)
-        print(fname)
         ext = fname.rsplit('.', 1)[1]  # 获取文件后缀
         unix_time = int(time.time())
         new_filename = str(unix_time) + '.' + ext  # 修改了上传的文件名
@@ -50,6 +49,7 @@ def api_upload():
             'number': None,
             'info': None
         }
+        print(result)
 
         # 解析读数
         numbers, info = rcg.recognize(os.path.join(file_dir, new_filename))
@@ -58,9 +58,7 @@ def api_upload():
             result['info'] = info
         else:
             result['number'] = 'Cannot recognize'
-
         print(result)
-
         return jsonify({'files': result})
 
     else:
@@ -76,4 +74,4 @@ def download(filename):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)

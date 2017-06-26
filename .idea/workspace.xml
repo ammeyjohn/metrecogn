@@ -1,10 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73f32b91-616a-4926-b6b7-f5be248a8743" name="Default" comment="">
+    <list default="true" id="73f32b91-616a-4926-b6b7-f5be248a8743" name="Default" comment="refactor: Update the style of index.&#10;&#10;- app.py rename to index.py.&#10;- Upate the style of index.&#10;- Move mod init code into the method where using it and make it only create instance once in recognize.py.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498208567.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209665.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209687.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209714.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209721.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210050.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210070.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210165.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210361.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210395.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210491.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210511.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210539.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210593.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210605.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210613.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210623.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210630.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210634.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210643.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210655.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210827.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210834.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210848.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498210855.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230443.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230474.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230480.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230485.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230496.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230501.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230517.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230523.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230536.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230543.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230551.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230556.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230565.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230573.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230580.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230592.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230598.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230621.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230628.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498230635.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268178.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268183.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268189.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268196.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268202.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268211.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268218.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268228.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268236.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268246.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268255.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268266.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268271.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268277.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268282.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268287.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268295.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/index.html" afterPath="$PROJECT_DIR$/app/template/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recognize.py" afterPath="$PROJECT_DIR$/recognize.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorials/fine_tune.py" afterPath="$PROJECT_DIR$/tutorials/fine_tune.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/rename.py" afterPath="$PROJECT_DIR$/utils/rename.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,36 +91,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="recognize.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recognize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -64,6 +109,9 @@
       <find>flatten0</find>
       <find>output</find>
       <find>labels</find>
+      <find>cls_mod</find>
+      <find>rot_mod</find>
+      <find>executor</find>
     </findStrings>
     <replaceStrings>
       <replace>meter_labels</replace>
@@ -92,13 +140,16 @@
         <option value="$PROJECT_DIR$/../temp/metrecogn/cnn_ocr.py" />
         <option value="$PROJECT_DIR$/app/.bowerrc" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/template/index.html" />
         <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/utils/rotate.py" />
         <option value="$PROJECT_DIR$/utils/merge.py" />
         <option value="$PROJECT_DIR$/utils/rename.py" />
         <option value="$PROJECT_DIR$/tutorials/fine_tune.py" />
+        <option value="$PROJECT_DIR$/app/wsgi.py" />
+        <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/app/index.py" />
         <option value="$PROJECT_DIR$/recognize.py" />
+        <option value="$PROJECT_DIR$/app/template/index.html" />
       </list>
     </option>
   </component>
@@ -153,7 +204,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tutorials" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metrecogn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metrecogn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,9 +467,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="23" width="958" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01746725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23908296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -458,8 +526,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/recognize.py</url>
-          <line>240</line>
-          <option name="timeStamp" value="6" />
+          <line>277</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -469,7 +537,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -491,7 +559,7 @@
         <state relative-caret-position="585">
           <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,13 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +802,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -761,12 +823,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="76" column="49" lean-forward="false" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="552">
+          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

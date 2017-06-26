@@ -18,8 +18,20 @@ cls_labels = ['LX14', 'LX15', 'WS', 'blurred', 'multi_meters', 'nometer', 'other
 rot_labels = ['0', '180', 'L90', 'R90']
 
 
+cls_mod = None
+rot_mod = None
+executor = None
+
+
+def read_image(filepath):
+    img = cv2.imread(filepath)
+    if img is None:
+        return None
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    return img
+
+
 def get_module(prefix, num_epoch, img_shape=(224, 224)):
-    print(prefix)
     sym, arg_params, aux_params = mx.model.load_checkpoint(prefix, num_epoch)
     mod = mx.mod.Module(symbol=sym, context=mx.cpu(), label_names=None)
     mod.bind(for_training=False, data_shapes=[('data', (1, 3, img_shape[0], img_shape[1]))])
@@ -73,6 +85,11 @@ def classify_batch(prefix, num_epoch, labels):
 
 
 def get_regions(img, scale, min_neighbors):
+    regions = []
+
+    if img is None:
+        return regions
+
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # if DEBUG:
@@ -81,7 +98,6 @@ def get_regions(img, scale, min_neighbors):
 
     classifier = cv2.CascadeClassifier('./output/cascade/cascade.xml')
     rects = classifier.detectMultiScale(gray, scale, minNeighbors=min_neighbors)
-    regions = []
     for (x, y, w, h) in rects:
         rgn_img = img[y:y + h, x:x + w]
 
@@ -94,6 +110,16 @@ def get_regions(img, scale, min_neighbors):
 
 
 def normalize(img):
+
+    global cls_mod
+    global rot_mod
+
+    if cls_mod is None:
+        cls_mod = get_module('./output/classify/meter', 5)
+
+    if rot_mod is None:
+        rot_mod = get_module('./output/rotate/rotate', 5)
+
     # 区分是否为水表
     cls_prob, cls_label = classify(cls_mod, img, cls_labels)
     if cls_label == 'LX14' or cls_label == 'LX15' or cls_label == 'WS' or cls_label == 'small_meter' or cls_label == 'blurred':
@@ -101,7 +127,7 @@ def normalize(img):
         # 获取图片旋转角度
         rot_prob, rot_label = classify(rot_mod, img, rot_labels)
 
-        print('Classify Label %s, prob=%f; Rotation Label %s, prob=%f' % (cls_label, cls_prob, rot_label, rot_prob))
+        # print('Classify Label %s, prob=%f; Rotation Label %s, prob=%f' % (cls_label, cls_prob, rot_label, rot_prob))
 
         if rot_label == '0':
             rot_img = img
@@ -201,10 +227,14 @@ def get_executor():
 
 
 def predict(img):
+    global executor
+
     img = cv2.resize(img, (150, 60))
     img = np.multiply(img, 1 / 255.0)
     img = img.transpose(2, 0, 1)
 
+    if executor is None:
+        executor = get_executor()
     executor.forward(is_train=False, data=mx.nd.array([img]))
     probs = executor.outputs[0].asnumpy()
     line = ''
@@ -238,9 +268,21 @@ def recognize(filepath):
     return numbers, info
 
 
-cls_mod = get_module('./output/classify/meter', 5)
-rot_mod = get_module('./output/rotate/rotate', 5)
-executor = get_executor()
+def recognize_batch(folder, output):
+    for file in listdir(arg_folder):
+        if file == '.DS_Store':
+            continue
+        numbers, info = recognize(path.join(folder, file))
+        if numbers is not None:
+            name, ext = path.splitext(file)
+            num = name[:-1]
+            for number in numbers:
+                print('Test=%s, Expected=%s' % (number, num))
+                if num != number:
+                    continue
+                copyfile(path.join(folder, file), path.join(output, file))
+                print('Copy file %s' % file)
+
 
 if __name__ == '__main__':
     # arg_prefix = 'output/rotate/rotate'
@@ -252,8 +294,9 @@ if __name__ == '__main__':
 
     arg_folder = argv[1]
     arg_output = argv[2]
+    recognize_batch(arg_folder, arg_output)
     # cut_batch()
-    classify_batch('./output/classify/meter', 5, cls_labels)
+    # classify_batch('./output/classify/meter', 5, cls_labels)
 
     # numbers = recognize(path.join(arg_folder, arg_name))
     # print(numbers)

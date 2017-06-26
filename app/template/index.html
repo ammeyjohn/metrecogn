@@ -6,41 +6,59 @@
     <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="static/blueimp-file-upload/css/jquery.fileupload.css" type="text/css">
 </head>
-<body>
+<body style="font-size: 30px">
 
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
-              <span class="btn btn-success fileinput-button">
-        <i class="glyphicon glyphicon-plus"></i>
-        <span>请选择水表图片...</span>
-        <input id="fileupload" type="file" name="myfile">
-    </span>
+            <br>
+            <span class="btn btn-success fileinput-button">
+                <i class="glyphicon glyphicon-plus"></i>
+                <span style="font-size: 25px">请选择水表图片...</span>
+                <input id="fileupload" type="file" name="myfile">
+            </span>
             <br>
             <br>
             <div id="progress" class="progress">
                 <div class="progress-bar progress-bar-success"></div>
             </div>
-            <div id="files" class="table-responsive">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div style="text-align: center">
                 <img id="image" src="" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="files" class="table-responsive">
                 <table class="table">
-                    <thead>
-                        <tr>
-                            <td>名称</td>
-                            <td>水笔读数</td>
-                            <td>水表类型</td>
-                            <td>水表类型概率</td>
-                            <td>水表角度</td>
-                            <td>水表角度概率</td>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
+                            <td>名称</td>
                             <td id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>水笔读数</td>
                             <td id="number"></td>
+                        </tr>
+                        <tr>
+                            <td>水表类型</td>
                             <td id="cls_label"></td>
+                        </tr>
+                        <tr>
+                            <td>水表类型概率</td>
                             <td id="cls_prob"></td>
+                        </tr>
+                        <tr>
+                            <td>水表角度</td>
                             <td id="rot_label"></td>
+                        </tr>
+                        <tr>
+                            <td>水表角度概率</td>
                             <td id="rot_prob"></td>
                         </tr>
                     </tbody>
@@ -62,6 +80,18 @@
         $('#fileupload').fileupload({
             url: '/api/upload',
             dataType: 'json',
+            start: function (e) {
+                $('#progress .progress-bar').css(
+                    'width', '0%'
+                );
+                $('#image').attr('src', '')
+                $('#name').text('')
+                $('#number').text('')
+                $('#cls_label').text('')
+                $('#cls_prob').text('')
+                $('#rot_label').text('')
+                $('#rot_prob').text('')
+            },
             done: function (e, data) {
                 var file = data.result.files
 
@@ -76,8 +106,7 @@
             progressall: function (e, data) {
                 var progress = parseInt(data.loaded / data.total * 100, 10);
                 $('#progress .progress-bar').css(
-                    'width',
-                    progress + '%'
+                    'width', progress + '%'
                 );
             }
         }).prop('disabled', !$.support.fileInput)
