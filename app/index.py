@@ -2,6 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath('.'))
 
+from os import listdir
 from werkzeug.utils import secure_filename
 from flask import Flask, render_template, render_template_string, url_for, jsonify, request, request, jsonify, send_from_directory, abort, send_file
 import time
@@ -23,7 +24,24 @@ def index():
     return render_template('index.html')
 
 
-# 用于测试上传，稍后用到
+@app.route('/images/<limits>')
+def gallery(limits=20):
+    images = []
+    count = 0
+    for img in listdir('app/static/images'):
+        if img == '.DS_Store':
+            continue
+        image = {
+            'name': img,
+            'url': '/static/images/' + img
+        }
+        images.append(image)
+        count += 1
+        if count > int(limits):
+            break
+    return render_template('imagelist.html', images=images)
+
+
 @app.route('/test/upload')
 def upload_test():
     return render_template('upload.html')

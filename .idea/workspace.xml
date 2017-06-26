@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73f32b91-616a-4926-b6b7-f5be248a8743" name="Default" comment="refactor: Update the style of index.&#10;&#10;- app.py rename to index.py.&#10;- Upate the style of index.&#10;- Move mod init code into the method where using it and make it only create instance once in recognize.py.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.py" afterPath="" />
+    <list default="true" id="73f32b91-616a-4926-b6b7-f5be248a8743" name="Default" comment="feature: Update the style of index.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/1-1600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/1-375.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/1-480.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/13-1600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/13-375.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/13-480.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/2-1600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/2-375.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/2-480.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/4-1600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/4-375.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/4-480.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/thumb-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/thumb-13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/thumb-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/img/thumb-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/fonts/lg.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/fonts/lg.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/fonts/lg.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/img/video-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/img/vimeo-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/img/youtube-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/fonts/lg.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/fonts/lg.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/fonts/lg.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/img/video-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/img/vimeo-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/img/youtube-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.banner" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/contributing.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-autoplay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-autoplay.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-fullscreen.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-hash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-hash.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-pager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-pager.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-share.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-share.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-thumbnail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-thumbnail.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-video.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lg-zoom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lightgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/demo/js/lightgallery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-fb-comment-box.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-fb-comment-box.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-fb-comment-box.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-transitions.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-transitions.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lg-transitions.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lightgallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lightgallery.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/css/lightgallery.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/fonts/lg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/js/lightgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/dist/js/lightgallery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/css/lg-fb-comment-box.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/css/lg-transitions.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/css/lightgallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/fonts/lg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/js/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/js/lg-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/js/lightgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-autoplay.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-fb-comment-box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-fullscreen.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-pager.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-share.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-theme-default.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-thumbnail.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-transitions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-video.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lg-zoom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/lightgallery.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/lightgallery.js/src/sass/prepros.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/template/imagelist.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498208567.PNG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209665.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498209687.png" afterPath="" />
@@ -70,9 +171,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268282.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268287.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/upload/1498268295.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.py" afterPath="$PROJECT_DIR$/app/index.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/index.html" afterPath="$PROJECT_DIR$/app/template/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recognize.py" afterPath="$PROJECT_DIR$/recognize.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,8 +198,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -147,9 +249,11 @@
         <option value="$PROJECT_DIR$/tutorials/fine_tune.py" />
         <option value="$PROJECT_DIR$/app/wsgi.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
-        <option value="$PROJECT_DIR$/app/index.py" />
         <option value="$PROJECT_DIR$/recognize.py" />
         <option value="$PROJECT_DIR$/app/template/index.html" />
+        <option value="$PROJECT_DIR$/app/index.py" />
+        <option value="$PROJECT_DIR$/app/template/imagelist.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -205,24 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metrecogn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metrecogn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,20 +549,29 @@
       <option name="presentableId" value="Default" />
       <updated>1497574715248</updated>
     </task>
+    <task id="LOCAL-00001" summary="refactor: Update the style of index.&#10;&#10;- app.py rename to index.py.&#10;- Upate the style of index.&#10;- Move mod init code into the method where using it and make it only create instance once in recognize.py.">
+      <created>1498454043022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498454043022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="23" width="958" height="1177" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23908296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28018433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12718894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19759825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -516,6 +611,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: Update the style of index.&#10;&#10;- app.py rename to index.py.&#10;- Upate the style of index.&#10;- Move mod init code into the method where using it and make it only create instance once in recognize.py." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Update the style of index.&#10;&#10;- app.py rename to index.py.&#10;- Upate the style of index.&#10;- Move mod init code into the method where using it and make it only create instance once in recognize.py." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -547,23 +646,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fetch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/rename.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meter.py" />
     <entry file="file://$PROJECT_DIR$/recognize.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -704,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/recognize.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../temp/metrecogn/detect_region.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -753,13 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -839,14 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="76" column="49" lean-forward="false" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recognize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -857,15 +917,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/recognize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        <state relative-caret-position="331">
+          <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/imagelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
